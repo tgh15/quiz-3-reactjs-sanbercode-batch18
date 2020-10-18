@@ -1,38 +1,142 @@
-.App {
+body {
+  background-image: url(./img/pattern.jpg);
+  font-family: 'Slabo 27px', serif;
+  margin: 0px;
+}
+
+ul {
+  padding-inline-start: 10px;
+}
+
+header {
+  background-color: white;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: white;
+  position: relative;
+  top: 70px;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+article {
+  border-bottom: 1px solid lightgrey;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h5 {
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+footer {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: black;
+  color: white;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.article_body {
+  display: flex;
+}
+
+.article_body ul {
+  flex: 1;
+  list-style: none;
+  font-weight: bold;
+}
+
+.poster {
+  /* flex: 1; */
+  width: 55%;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+}
+
+.poster img {
+  width: 100%;
+  position: center;
+}
+
+table {
+  width: 100%;
+  border: 1px solid #000;
+}
+
+th {
+  background-color: #aaa;
+}
+
+td {
+  background-color: #ff7f50;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.movielist {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.movieform {
+  width: 80%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
+
+/* .form-group input,
+.form-group textarea {
+  flex: 1;
+} */
